@@ -101,24 +101,31 @@ dont hard code solutions. */
 
 // Implement the function usersByPet to return a list of user objects filtered by cat or dog.
 const usersByPet = pet => {
+  const petFilter = []
+  database.users.forEach((v) => {
+    if (v.favPet === pet) { petFilter.push(v); }
+  });
+  return petFilter;
 }
 console.log(usersByPet('dog'))
 console.log(usersByPet('cat'))
 
 // Implement the function collegeLookup to return the name and color of a user's college.
 const collegeLookup = user => {
+  const { name, color } = database.college.find(v => v.id === database.users.find(v => v.firstName === user).collegeId);
+  return [name, color];
 }
 console.log(collegeLookup('Charles'))
 console.log(collegeLookup('Daniela'))
 
 // define oppositesAttract as a list of friend objects whose favorite pets are different.
-const oppositesAttract = _______
+const oppositesAttract = database.friends.filter(v => database.users.find(s => s.id === v.id1).favPet !== database.users.find(s => s.id === v.id2).favPet)
 console.log(oppositesAttract)
 
 // define local as a list of users who live in the same state as they go to school.
-const local = _______
+const local = database.users.filter(v => v.state === database.college.find(s => s.id === v.collegeId).state)
 console.log(local)
 
 // define collegeFriends as a list of friend objects that go to the same college
-const collegeFriends = _______
+const collegeFriends = database.friends.filter(v => database.users.find(s => s.id === v.id1).collegeId === database.users.find(s => s.id === v.id2).collegeId)
 console.log(collegeFriends)
