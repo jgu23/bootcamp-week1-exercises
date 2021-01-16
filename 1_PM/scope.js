@@ -1,7 +1,10 @@
 /**
  * Part 1:
- *    What will print and why?
- *    What will change if we delete line 15? Why?
+ *    What will print and why? 1, 2, undefined
+ *      The first console.log(a) is not inside any function and prints the value of the a defined globally
+ *      The second console.log(a) is encountered inside the call of y(), where a is declared to be equal to 2
+ *      The third console.log(a) is encountered inside the call of x(), where a is not set to a particular value
+ *    What will change if we delete line 15? Why? It will take a as the globally defined value of a and print 1, 2, 1
  * 
  * Part 2:
  *    Change to ES6 syntax (use arrow functions and change var to let).
@@ -11,17 +14,16 @@
  *        console logs.
  */
 
-function x() {
-  var a;
+const x = (a) => {
   console.log(a);
 }
 
-function y() {
-  var a = 2;
+const y = () => {
+  let a = 2;
   console.log(a);
-  x();
+  x(a);
 }
 
-var a = 1;
+let a = 1;
 console.log(a);
 y();
