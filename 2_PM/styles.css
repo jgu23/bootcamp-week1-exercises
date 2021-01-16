@@ -1,0 +1,70 @@
+body {
+    padding-top: 5rem;
+}
+
+.heading {
+    padding: 3rem 1.5rem;
+    text-align: justify;
+    text-align-last: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+iframe {
+    border: none;
+}
+
+/* From Bootstrap: https://getbootstrap.com/docs/4.5/examples/carousel/ */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+    padding-top: 2.5rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* Adapted from https://reactgo.com/css-crop-images/#:~:text=To%20crop%20an%20image%20to,the%20given%20height%20and%20width. */
+.col-square-pic {
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out
+}
+
+.col-square-pic:hover {
+    opacity: 0.5;
+}
+
+/* Adapted from https://www.w3schools.com/howto/howto_css_image_text.asp */
+.centered-pic-text {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 2.8em;
+    color: pink;
+    transition: color 0.2s ease-in-out;
+    /* From https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.centered-pic-text:hover {
+    color: #87cefa;
+}
+
+/* From https://stackoverflow.com/questions/1418838/html-making-a-link-lead-to-the-anchor-centered-in-the-middle-of-the-page */
+#vote-now {
+    position: relative;
+    padding-top: 100px;
+}

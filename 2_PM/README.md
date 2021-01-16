@@ -1,4 +1,4 @@
-# Day 1 PM: Personal Website
+# Day 2 PM: Personal Website
 
 Let's build a basic website with HTML and CSS!
 
