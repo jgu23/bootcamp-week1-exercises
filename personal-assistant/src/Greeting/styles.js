@@ -20,3 +20,16 @@ export const Text = styled.p`
   font-size: 18px;
   color: ${({ theme }) => theme.colors.fonts.body};
 `
+export const TextSmall = styled.p`
+  font-family: ${({ theme }) => theme.fonts.body.family};
+  font-weight: ${({ theme }) => theme.fonts.body.weight};
+  font-size: 17px;
+  color: ${({ theme }) => theme.colors.fonts.body};
+`
+
+export const TextSmaller = styled.p`
+  font-family: ${({ theme }) => theme.fonts.body.family};
+  font-weight: ${({ theme }) => theme.fonts.body.weight};
+  font-size: 10px;
+  color: ${({ theme }) => theme.colors.fonts.body};
+`
