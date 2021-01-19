@@ -20,3 +20,6 @@ Here are some more details:
     - GOAL: Filter tasks by priority, due date, person assigned, required skills
         - REQUIRE: properties for each of these, that are allowed to be empty
         - REQUIRE: user profiles with name, avatar, title, skills
+
+- Navbar
+- 
