@@ -33,3 +33,10 @@ export const TextSmaller = styled.p`
   font-size: 10px;
   color: ${({ theme }) => theme.colors.fonts.body};
 `
+
+export const TextEvenSmaller = styled.p`
+  font-family: ${({ theme }) => theme.fonts.body.family};
+  font-weight: ${({ theme }) => theme.fonts.body.weight};
+  font-size: 7px;
+  color: ${({ theme }) => theme.colors.fonts.body};
+`
