@@ -1,12 +1,12 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import AllTodos from './AllTodos'
-import Greeting from './Greeting'
-import NavBar from './Navbar'
+import AllTodos from './containers/AllTodos'
+import Greeting from './containers/Greeting'
+import NavBar from './components/Navbar'
 import theme from './theme'
 import { TodosProvider } from './context'
-import SpecificTodo from './SpecificTodo'
+import SpecificTodo from './components/SpecificTodo'
 
 const AppWrapper = styled.div`
   min-height: 100vh;

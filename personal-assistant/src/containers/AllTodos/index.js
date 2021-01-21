@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
-import { ADD_TODO, CLEAR_ALL_TODOS, TodosContext } from '../context'
+import { ADD_TODO, CLEAR_ALL_TODOS, TodosContext } from '../../context'
 import {
   Container, Input, Button, TodosList, Row, Header, NoTodos,
 } from './styles'
-import Todo from '../Todo'
+import Todo from '../../components/Todo'
 
 const AllTodos = () => {
   const { state, dispatch } = useContext(TodosContext)
