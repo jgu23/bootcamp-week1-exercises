@@ -3,7 +3,7 @@ import { useParams, useHistory } from 'react-router-dom'
 import {
   Container, DescriptionInput, Header, SaveTodo,
 } from './styles'
-import { TodosContext, EDIT_TODO } from '../context'
+import { TodosContext, EDIT_TODO } from '../../context'
 
 const SpecificTodo = () => {
   const { id: idParam } = useParams()
